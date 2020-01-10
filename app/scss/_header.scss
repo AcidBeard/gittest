@@ -1,15 +1,11 @@
 .header {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background: url('/images/gorod-zdaniya-zakat-721a55c.jpg')no-repeat 50% 50%/ cover;
     &-top {
         &__logo {
             width: 200px;
             height: 200px;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
         }
         &__menu {
             width: 100%;
