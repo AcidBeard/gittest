@@ -11,7 +11,10 @@
                 object-fit: cover;
             }
         }
-        &__menu {}
+        &__menu {
+            width: 100%;
+            height: 100%;
+        }
     }
 
 }
