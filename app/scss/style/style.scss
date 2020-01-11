@@ -14,27 +14,37 @@ body {
     width: 100%;
     position: relative;
 }
+ 
 .header {
+    &__container {
+        width: 100%;
+    }
     &-baner {
         height: 60px;
        background: url(/images/topBaner.jpg)no-repeat 100% 38% / cover;
+     
     }
     &-top-line {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         background: #dadde8;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         .city__select {
             width: auto;
             padding-left: 20px;   
             line-height: 30px;
             position: relative;
-            
+            font-size: 14px;
+            color: #39393b;
             span {
-                font-family: Montserrat;
+                font-family: Montserrat;              
                 a {
                     font-family: Montserrat;
                     text-decoration: none;
+                    font-size: 16px;
                     &:after {
                         content: '';
                         display: block;
@@ -46,15 +56,37 @@ body {
                         border-top: 1px solid transparent;
                         border-left: 1px solid transparent;
                         -webkit-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                        
+                        transform: rotate(45deg);                      
                         right: -12px;
                         top: 12px;
                     }
                 }
             }
         }
-        .head__panel {}
+        .header__panel {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-left: auto;
+            margin-right: 40px;
+            list-style: none;
+            .header__item {
+            margin-left: 50px;
+                .header__link {
+                text-decoration: none;
+                color: #39393b;
+                font-family: Montserrat;
+                font-size: 14px;
+                -webkit-transition: .4s;
+                transition: .4s;
+                &:hover {
+                    color: #757575;
+                    
+                }
+                }
+            }
+
+        }
     }
     &-mid {
         &__logo {}
