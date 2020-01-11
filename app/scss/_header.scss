@@ -1,16 +1,23 @@
-.header {
+.main-wrapper {
+    min-height: 100%;
     width: 100%;
-    height: 100vh;
-    background: url('/images/mainBg.jpg')no-repeat 50% 50%/cover;
-    &-top {
-        &__logo {
-            width: 200px;
-            height: 200px;
+    position: relative;
+}
+.header {
+    &-baner {
+       img {} 
+    }
+    &-top-line {
+        .city__select {
+            
         }
-        &__menu {
-            width: 100%;
-            height: 100%;
-        }
+        .head__panel {}
+    }
+    &-mid {
+        &__logo {}
+        &__contact {}
+        &__search {}
+        &__basket {}
     }
 
 }
