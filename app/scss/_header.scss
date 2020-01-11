@@ -6,7 +6,8 @@
  
 .header {
     &__container {
-        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
     }
     &-baner {
         height: 60px;
@@ -54,6 +55,7 @@
             list-style: none;
             .header__item {
             margin-left: 50px;
+
                 .header__link {
                 text-decoration: none;
                 color: #39393b;
