@@ -1,3 +1,6 @@
+$color : #000;
+$color2 : #fff;
+
 .main-wrapper {
     min-height: 100%;
     width: 100%;
@@ -13,33 +16,39 @@
     &-baner {
         height: 60px;
        background: url( /images/hh.jpg)no-repeat 100% 38% / cover;
+       filter: blur(3px);
+       position: absolute;
+       
      
     }
     &-top-line {
         display: flex;
-        background: #dadde8;
+        background: #fff;
         align-items: center;
+        background: #000;
+        border-bottom: 1px solid #52dcff;
         .city__select {
             width: auto;
             padding-left: 20px;   
             line-height: 30px;
             position: relative;
             font-size: 14px;
-            color: #39393b;
+            color:  $color2 ;
             span {
                 font-family: Montserrat;              
                 a {
                     font-family: Montserrat;
                     text-decoration: none;
                     font-size: 16px;
+                    color: $color2;
                     &:after {
                         content: '';
                         display: block;
                         position: absolute;
                         width: 4px;
                         height: 4px;
-                        border-bottom: 1px solid #022fd1;
-                        border-right: 1px solid #022fd1;
+                        border-bottom: 1px solid $color2;
+                        border-right: 1px solid $color2;
                         border-top: 1px solid transparent;
                         border-left: 1px solid transparent;
                         transform: rotate(45deg);                      
@@ -59,7 +68,7 @@
 
                 .header__link {
                 text-decoration: none;
-                color: #39393b;
+                color:  $color2;
                 font-family: Montserrat;
                 font-size: 14px;
                 transition: .4s;
@@ -73,6 +82,9 @@
         }
     }
     &-mid {
+        display: flex;
+        align-items: center;
+        padding: 10px;
         &__logo {
             width: 180px;
             height: auto;
@@ -82,7 +94,21 @@
                 
             }
         }
-        &__contact {}
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            .phone {
+                font-family: Montserrat;
+                color: $color ;
+                margin-bottom: 3px;
+            }
+            .call-order {
+                &__link {
+                    color: $color  ;
+                    font-family: Montserrat;
+                }
+            }
+        }
         &__search {}
         &__basket {}
     }
@@ -95,6 +121,9 @@
             flex-grow: 1;
             text-align: center;
             border-right: 1px solid rgba(255,255,255,.4);
+            &:hover {
+                background: #000;
+            }
              
             .main-menu__link {
                 text-decoration: none;
