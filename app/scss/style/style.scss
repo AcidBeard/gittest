@@ -42,7 +42,9 @@ $color2 : #fff;
         -ms-flex-align: center;
         align-items: center;
         background: #000;
-        border-bottom: 1px solid #52dcff;
+        -webkit-box-shadow: 2px 5px 14px 0px silver;
+        box-shadow: 2px 5px 14px 0px silver;
+        
         .city__select {
             width: auto;
             padding-left: 20px;   
@@ -89,7 +91,7 @@ $color2 : #fff;
                 text-decoration: none;
                 color:  $color2;
                 font-family: Montserrat;
-                font-size: 14px;
+                font-size: 12px;
                 -webkit-transition: .4s;
                 transition: .4s;
                 &:hover {
@@ -109,6 +111,7 @@ $color2 : #fff;
         -ms-flex-align: center;
         align-items: center;
         padding: 10px;
+        
         &__logo {
             width: 180px;
             height: auto;
@@ -147,8 +150,8 @@ $color2 : #fff;
         display: flex;
         background: linear-gradient(310deg, #ed4d34, #d952ff,#52dcff);   
         list-style: none;
-        -webkit-box-shadow: 4px 14px 30px 0px grey;
-        box-shadow: 4px 14px 30px 0px grey;
+        -webkit-box-shadow: 2px 5px 14px 0px silver;
+        box-shadow: 2px 5px 14px 0px silver;
         &__item {
             -webkit-box-flex: 1;
             -ms-flex-positive: 1;
@@ -166,7 +169,8 @@ $color2 : #fff;
                 height: 48px;
                 line-height: 48px;
                 color: #fff;
-                
+                font-size: 14px;
+                font-weight: bold;
             }
         }
     }
