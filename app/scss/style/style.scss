@@ -30,7 +30,7 @@ $color2 : #fff;
        -webkit-filter: blur(3px);
        filter: blur(3px);
        position: absolute;
-       
+       display: none;
      
     }
     &-top-line {
@@ -122,6 +122,7 @@ $color2 : #fff;
             }
         }
         &__contact {
+            margin-left: 20px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -141,7 +142,22 @@ $color2 : #fff;
                 }
             }
         }
-        &__search {}
+        .header-search {
+            &__input {
+                margin-left: 20px;
+                #search {
+                    width: 350px;
+                    border: 1px solid #ed4d34;
+                    height: 32px;
+                    outline: none;
+                    padding-left: 10px;
+                }
+            }
+            &__btn {
+                
+            }
+
+        }
         &__basket {}
     }
     .main-menu {
