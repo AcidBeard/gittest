@@ -115,16 +115,17 @@ $color2 : #fff;
         .header-search {
             &__input {
                 margin-left: 20px;
+                display: flex;
                 #search {
                     width: 350px;
-                    border: 1px solid #ed4d34;
+                    border: 1px solid #39393b; 
                     height: 32px;
                     outline: none;
                     padding-left: 10px;
                 }
             }
             &__btn {
-                
+                width: 100px;
             }
 
         }
@@ -132,7 +133,7 @@ $color2 : #fff;
     }
     .main-menu {
         display: flex;
-        background: linear-gradient(310deg, #ed4d34, #d952ff,#52dcff);   
+        background: linear-gradient(310deg, #ed4d34, #d952ff,#52dcff, #fce303);   
         list-style: none;
         box-shadow: 2px 5px 14px 0px silver;
         &__item {
